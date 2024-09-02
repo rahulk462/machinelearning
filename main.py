@@ -4,7 +4,7 @@ import json
 import base64
 import numpy as np
 import joblib
-
+st.set_page_config(page_title="RaceTimeInsight",layout="wide")
 @st.cache_resource
 def load_model():
     # Load the trained model
