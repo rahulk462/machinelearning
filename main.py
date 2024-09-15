@@ -90,8 +90,9 @@ def main():
     if page == "Home":
         #set_custom_font_and_color()
         #set_background("stockphoto3.jpg")
-
+        st.image("logo.png")
         st.title("Marathon Reader")
+        
         st.write(
             "When running for a marathon, nothing is more important than the quality of training in advance. Many top marathon athletes work to have highly sophisticated training plans where they work to refine many aspects such as weekly kilometers and amount of cross training"
         )
