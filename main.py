@@ -4,6 +4,7 @@ import json
 import base64
 import numpy as np
 import joblib
+from PIL import Image
 st.set_page_config(page_title="RaceTimeInsight",layout="wide")
 @st.cache_resource
 def load_model():
@@ -90,7 +91,14 @@ def main():
     if page == "Home":
         #set_custom_font_and_color()
         #set_background("stockphoto3.jpg")
-        st.image("logo.png")
+        img = Image.open('logo.png')
+
+        # Resize the image to the desired size (e.g., 300x300 pixels)
+        resized_img = img.resize((100, 100))
+        
+        # Display the resized image
+        st.image(resized_img, use_column_width=False)
+        
         st.title("Marathon Reader")
         
         st.write(
