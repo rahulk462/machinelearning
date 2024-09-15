@@ -97,9 +97,10 @@ def main():
         resized_img = img.resize((100, 100))
         
         # Display the resized image
+        st.title("Marathon Reader")
         st.image(resized_img, use_column_width=False)
         
-        st.title("Marathon Reader")
+        
         
         st.write(
             "When running for a marathon, nothing is more important than the quality of training in advance. Many top marathon athletes work to have highly sophisticated training plans where they work to refine many aspects such as weekly kilometers and amount of cross training"
